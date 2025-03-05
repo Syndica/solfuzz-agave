@@ -1,4 +1,4 @@
-name: Trigger Solfuzz CI
+name: Trigger Sigfuzz CI
 
 on:
   workflow_run:
@@ -11,7 +11,7 @@ jobs:
   kick_solfuzz_ci:
     runs-on: ubuntu-latest
     steps:
-      - name: dispatch solfuzz CI
+      - name: Dispatch SigFuzz CI
         run: |
           curl -L \
           -X POST \
